@@ -1,24 +1,21 @@
 #include <stdio.h>
-/**
-* main - A program that prints the alphabet in lowercase, and then in uppercase
-* return: Always 0 (Success)
-*/
 
+/**
+* main - A program that prints the alphabet in lowercase,
+* and then in uppercase
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int c = 97;
-	int d = 65;
+	char lu;
 
-	while (c <= 122);
-	{
-		putchar(c);
-		c++;
-	}
-	while (d <= 90)
-	{
-		putchar(d);
-		d++;
-	}
+	for (lu = 'a'; lu <= 'z'; lu++)
+		putchar(lu);
+
+	for (lu = 'A'; lu <= 'Z'; lu++)
+		putchar(lu);
+
 	putchar('\n');
+
 	return (0);
 }

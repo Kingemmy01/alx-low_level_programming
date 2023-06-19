@@ -3,7 +3,8 @@
 /**
  * main - A program that prints all combination of single digits
  *Return: Always 0
- */ int main(void)
+ */
+int main(void)
 {
 	int n;
 
@@ -13,8 +14,9 @@
 		if (n != 57)
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
+	}
 	putchar('\n');
 	return (0);
 }
